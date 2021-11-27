@@ -1,0 +1,15 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: black;
+  font-size: 7vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
