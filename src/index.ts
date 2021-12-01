@@ -1,4 +1,10 @@
+import { configure } from "queryparams";
 import { BIRTHDAYS } from "./birthdays";
+
+const { params } = configure({
+  negative: 1000,
+  positive: 4000,
+});
 
 const ROOT = document.getElementById("root");
 const YEAR = new Date().getFullYear();
@@ -15,10 +21,10 @@ const format = (birthday: typeof BIRTHDAYS[number]) => {
 
 const render = async () => {
   ROOT.innerHTML = "";
-  await wait(1000);
+  await wait(params.negative);
   const birthday = BIRTHDAYS[(Math.random() * BIRTHDAYS.length) | 0];
   ROOT.innerHTML = format(birthday);
-  await wait(4000);
+  await wait(params.positive);
   render();
 };
 
