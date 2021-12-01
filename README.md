@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d215d3e-0c0a-47ff-ad87-7672b3effc09/deploy-status)](https://app.netlify.com/sites/damonzucconi-subscription-to-the-memory-of/deploys)
+
 # Subscription to the Memory Of
 
 ## Meta
